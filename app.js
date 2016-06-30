@@ -6,12 +6,14 @@ var app = express();
 var port = 5000;
 
 
+app.use(express.static('public'));
+
 app.get('/', function(req, res){
-		res.send('Hello World')
+		res.send('Hello World');
 });
 
 app.get('/books', function(req, res){
-		res.send('Hello Books')
+		res.send('Hello Books');
 });
 
 
