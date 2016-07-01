@@ -1,0 +1,20 @@
+{
+  "name": "librari",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Ardian Haxha <ardian@brainpress.org>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/ardian/Librari",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
