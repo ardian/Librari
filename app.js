@@ -6,10 +6,12 @@ var port = process.env.PORT || 5000;
 
 // app.use is prior to app.get
 app.use(express.static('public'));
-app.use(express.static('src/views'));
+app.set('views', ('./src/views'));
+
+app.set('view engine', 'jade');
 
 app.get('/', function (req, res) {
-    res.send('Hello World');
+    res.render('index');
 });
 
 app.get('/books', function (req, res) {
